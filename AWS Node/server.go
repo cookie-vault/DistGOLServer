@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"uk.ac.bris.cs/gameoflife/stubs"
+	"DistGOLServer/stubs"
 )
 
 func GOLLogic(startY, endY, globalH, globalW int, world, next [][]byte) {
