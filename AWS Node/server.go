@@ -167,7 +167,7 @@ func worldDistributedServer(globalWorld [][]byte, globalH, globalW int, children
 				}
 			}
 
-			log.Printf("[BROKER] Sending world piece (Row%d to Row%d) with halo world piece (H=%d x W=%d) to GOL_WORKER %d\n", w.startY, w.endY, localHaloWorldH, globalW, w.GOL_WorkerID)
+			log.Printf("[BROKER] Sending world piece (Row%d to Row%d) with halo world piece (H=%d x W=%d) to GOL_WORKER %d\n", w.startY, w.endY, localHaloWorldH, globalW, w.DistWorkerID)
 
 			// passing over startY and endY tells worker which global rows this world piece represents
 			distWorkerReq := stubs.DistWorkerRequest{
