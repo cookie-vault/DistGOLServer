@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c42f7434-dd5e-4f85-8e1e-d0fffb52bc84" name="Changes" comment="&quot;Updatad Logger&quot;" />
+    <list default="true" id="c42f7434-dd5e-4f85-8e1e-d0fffb52bc84" name="Changes" comment="&quot;Fixed bugs&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +76,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;Updatad Logger&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Updatad Logger&quot;" />
+    <MESSAGE value="&quot;Fixed bugs&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Fixed bugs&quot;" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

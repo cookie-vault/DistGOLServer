@@ -508,7 +508,7 @@ func main() {
 	}
 	defer listener.Close()
 
-	log.Printf("[BROKER] GOL Engine listening on port %s\n", *pAddr)
+	log.Printf("GOL Engine listening on port %s\n", *pAddr)
 
 	// Accept and serve local controller
 	rpc.Accept(listener)
