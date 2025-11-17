@@ -75,7 +75,7 @@ func copyCurrentWorld(world [][]byte) [][]byte {
 
 type GOLWorker struct {
 	mu       sync.RWMutex
-	cond     *sync.Cond // signal pause/resume
+	cond     *sync.Cond
 	world    [][]byte
 	Height   int
 	Width    int
@@ -506,7 +506,13 @@ func main() {
 	if err != nil {
 		log.Fatal("net.Listen error:", err)
 	}
-	defer listener.Close()
+
+	defer func(listener net.Listener) {
+		err := listener.Close()
+		if err != nil {
+			log.Printf("Error closing listener: %v\n", err)
+		}
+	}(listener)
 
 	log.Printf("GOL Engine listening on port %s\n", *pAddr)
 
